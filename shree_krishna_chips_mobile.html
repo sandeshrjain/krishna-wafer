@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Krishna Hot & Fresh Chips — Authentic Indian Snacks</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--terracotta:#C1603A;--terracotta-light:#D4785A;--terracotta-dark:#9A4525;--mustard:#D4A017;--mustard-light:#E8BC3A;--leaf:#3A6B3E;--parchment:#F5EDD8;--parchment-dark:#EDE0C4;--warm-dark:#2C1A0E;--brown-mid:#5C3D28;--muted:#8A6D52;--card-bg:#FBF4E6;--chili:#A83225;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background-color:var(--parchment);color:var(--warm-dark);overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.055'/%3E%3C/svg%3E");pointer-events:none;z-index:9998;}
+
+/* ── NAVBAR ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;backdrop-filter:blur(18px);background:rgba(245,237,216,0.9);border-bottom:1px solid rgba(193,96,58,0.18);transition:all 0.3s;}
+nav.scrolled{padding:0.65rem 4rem;background:rgba(245,237,216,0.98);box-shadow:0 4px 28px rgba(44,26,14,0.1);}
+.logo{font-family:'Playfair Display',serif;font-weight:900;color:var(--warm-dark);text-decoration:none;line-height:1.1;}
+.logo-main{font-size:1.35rem;display:block;}
+.logo-dot{color:var(--terracotta);}
+.logo-sub{font-size:0.68rem;font-family:'Syne',sans-serif;font-weight:600;letter-spacing:0.07em;color:var(--muted);display:block;text-transform:uppercase;}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--brown-mid);text-decoration:none;position:relative;padding-bottom:3px;transition:color 0.3s;}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--terracotta);transition:width 0.3s;}
+.nav-links a:hover{color:var(--terracotta);}
+.nav-links a:hover::after{width:100%;}
+.nav-right{display:flex;align-items:center;gap:0.8rem;}
+.cart-btn{background:var(--warm-dark);color:var(--parchment);border:none;padding:0.6rem 1.2rem;border-radius:50px;font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:0.45rem;transition:background 0.3s,transform 0.2s;white-space:nowrap;}
+.cart-btn:hover{background:var(--terracotta);transform:scale(1.04);}
+.cart-count{background:var(--terracotta);color:white;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:0.68rem;font-weight:800;transition:transform 0.3s;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.hamburger span{display:block;width:24px;height:2px;background:var(--warm-dark);border-radius:2px;transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(245,237,216,0.98);backdrop-filter:blur(20px);padding:5rem 2rem 2rem;flex-direction:column;gap:0;z-index:999;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu-header{position:absolute;top:1rem;right:1.2rem;}
+.mobile-close{background:var(--warm-dark);color:white;border:none;width:36px;height:36px;border-radius:50%;font-size:1.1rem;cursor:pointer;}
+.mobile-menu a{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--warm-dark);text-decoration:none;padding:1.1rem 0;border-bottom:1px solid rgba(193,96,58,0.12);letter-spacing:0.03em;transition:color 0.2s;}
+.mobile-menu a:hover{color:var(--terracotta);}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 4rem 5rem;background:radial-gradient(ellipse at 65% 45%,rgba(193,96,58,0.13) 0%,transparent 55%),radial-gradient(ellipse at 15% 75%,rgba(212,160,23,0.1) 0%,transparent 50%),var(--parchment);}
+.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:80px;background:var(--warm-dark);clip-path:polygon(0 60%,100% 0%,100% 100%,0% 100%);}
+.hero-content{max-width:580px;position:relative;z-index:2;animation:heroSlideIn 0.9s cubic-bezier(0.16,1,0.3,1) both;opacity:0;transform:translateY(40px);}
+@keyframes heroSlideIn{to{opacity:1;transform:translateY(0);}}
+.hero-badge{display:inline-flex;align-items:center;gap:0.4rem;background:var(--leaf);color:white;padding:0.35rem 0.9rem;border-radius:50px;font-family:'Syne',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.3rem;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.8rem);font-weight:900;line-height:1.06;margin-bottom:1.2rem;color:var(--warm-dark);}
+.hero h1 em{font-style:italic;color:var(--terracotta);}
+.hero p{font-size:1rem;color:var(--muted);line-height:1.85;margin-bottom:2rem;max-width:460px;}
+.hero-ctas{display:flex;gap:0.9rem;flex-wrap:wrap;}
+.btn-primary{background:var(--terracotta);color:white;padding:0.9rem 2rem;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;border:none;cursor:pointer;transition:all 0.3s;box-shadow:0 8px 28px rgba(193,96,58,0.38);text-decoration:none;display:inline-block;}
+.btn-primary:hover{transform:translateY(-3px);background:var(--terracotta-dark);}
+.btn-outline{background:transparent;color:var(--warm-dark);padding:0.9rem 2rem;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;border:2px solid var(--warm-dark);cursor:pointer;transition:all 0.3s;text-decoration:none;display:inline-block;}
+.btn-outline:hover{background:var(--warm-dark);color:var(--parchment);transform:translateY(-3px);}
+
+/* Bowl Animation */
+.hero-visual{position:absolute;right:5%;top:50%;transform:translateY(-50%);width:min(440px,42vw);aspect-ratio:1;z-index:2;animation:heroVisualIn 1.1s 0.3s cubic-bezier(0.16,1,0.3,1) both;}
+@keyframes heroVisualIn{from{opacity:0;transform:translateY(-50%) scale(0.8)}to{opacity:1;transform:translateY(-50%) scale(1)}}
+.bowl-scene{position:relative;width:100%;height:100%;}
+.bowl-svg{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:85%;}
+.falling-zone{position:absolute;inset:0;overflow:hidden;border-radius:50%;}
+.snack-fall{position:absolute;font-size:2rem;top:-60px;opacity:0;animation:fallDown var(--dur) var(--delay) ease-in infinite;left:var(--left);filter:drop-shadow(0 4px 6px rgba(0,0,0,0.2));}
+@keyframes fallDown{0%{opacity:0;top:-60px;transform:rotate(0deg) scale(0.7);}10%{opacity:1;}55%{opacity:1;top:52%;transform:rotate(var(--rot)) scale(1);}70%{opacity:0.6;top:58%;transform:rotate(calc(var(--rot)*1.5)) scale(0.85);}85%{opacity:0;top:62%;}100%{opacity:0;top:62%;}}
+.bowl-glow{position:absolute;bottom:8%;left:50%;transform:translateX(-50%);width:60%;height:12px;background:radial-gradient(ellipse,rgba(212,160,23,0.35),transparent 70%);animation:glowPulse 2s ease infinite;border-radius:50%;}
+@keyframes glowPulse{0%,100%{opacity:0.5;transform:translateX(-50%) scaleX(1)}50%{opacity:1;transform:translateX(-50%) scaleX(1.15)}}
+
+/* ── STATS ── */
+.stats-bar{background:var(--warm-dark);color:white;padding:2.2rem 4rem;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:1.5rem;position:relative;z-index:1;}
+.stat-item{text-align:center;}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:var(--mustard);display:block;}
+.stat-label{font-family:'Syne',sans-serif;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.6;}
+
+/* ── MARQUEE ── */
+.marquee-wrap{overflow:hidden;background:var(--terracotta);padding:0.9rem 0;}
+.marquee-track{display:flex;gap:3rem;animation:marqueeRun 22s linear infinite;width:max-content;align-items:center;}
+@keyframes marqueeRun{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-item{font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:rgba(255,255,255,0.92);white-space:nowrap;display:flex;align-items:center;gap:0.7rem;}
+.marquee-dot{width:5px;height:5px;background:rgba(255,255,255,0.5);border-radius:50%;}
+
+/* ── SECTIONS ── */
+section{padding:5rem 4rem;}
+.section-label{font-family:'Syne',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--terracotta);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.7rem;}
+.section-label::before{content:'';width:26px;height:2px;background:var(--terracotta);display:block;}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.9rem);font-weight:900;color:var(--warm-dark);line-height:1.15;margin-bottom:0.8rem;}
+.section-sub{color:var(--muted);font-size:0.95rem;line-height:1.85;max-width:500px;margin-bottom:2.5rem;}
+
+/* ── SEARCH BAR ── */
+.search-wrap{position:relative;margin-bottom:1.8rem;max-width:580px;}
+.search-icon{position:absolute;left:1.15rem;top:50%;transform:translateY(-50%);font-size:1rem;pointer-events:none;z-index:1;}
+#searchInput{width:100%;padding:0.95rem 3rem 0.95rem 3rem;font-family:'DM Sans',sans-serif;font-size:0.95rem;background:white;border:2px solid rgba(193,96,58,0.2);border-radius:50px;outline:none;color:var(--warm-dark);transition:border-color 0.25s,box-shadow 0.25s;box-shadow:0 2px 12px rgba(44,26,14,0.07);}
+#searchInput:focus{border-color:var(--terracotta);box-shadow:0 4px 20px rgba(193,96,58,0.18);}
+#searchInput::placeholder{color:var(--muted);}
+.search-clear{position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:rgba(193,96,58,0.12);border:none;border-radius:50%;width:28px;height:28px;font-size:0.82rem;cursor:pointer;align-items:center;justify-content:center;color:var(--terracotta);transition:background 0.2s;display:none;}
+.search-clear.visible{display:flex;}
+.search-clear:hover{background:rgba(193,96,58,0.22);}
+.no-results{text-align:center;padding:3rem 1rem;display:none;}
+.no-results .nr-emoji{font-size:3.5rem;display:block;margin-bottom:0.8rem;}
+.no-results p{font-family:'Syne',sans-serif;color:var(--muted);font-size:0.92rem;}
+
+/* ── CATEGORY FILTER ── */
+.cat-filter{display:flex;gap:0.65rem;flex-wrap:wrap;margin-bottom:2rem;}
+.cat-btn{padding:0.5rem 1.15rem;border-radius:50px;border:2px solid rgba(92,61,40,0.22);background:transparent;font-family:'Syne',sans-serif;font-size:0.77rem;font-weight:700;color:var(--brown-mid);cursor:pointer;transition:all 0.22s;letter-spacing:0.05em;white-space:nowrap;}
+.cat-btn.active,.cat-btn:hover{background:var(--terracotta);border-color:var(--terracotta);color:white;transform:scale(1.04);}
+
+/* ── PRODUCTS SECTION ── */
+.products-section{background:var(--parchment-dark);}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:1.6rem;}
+
+/* ── PRODUCT CARD ── */
+.product-card{background:var(--card-bg);border-radius:18px;overflow:hidden;position:relative;border:1px solid rgba(193,96,58,0.12);transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.4s;display:flex;flex-direction:column;}
+.product-card:hover{transform:translateY(-8px) scale(1.015);box-shadow:0 25px 50px rgba(44,26,14,0.13);}
+.product-card::after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1;border-radius:18px;}
+
+.product-img-wrap{width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,#F5E6C8,#EDD5A3);display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;overflow:hidden;flex-shrink:0;}
+.product-img-wrap::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 30%,rgba(255,255,255,0.22),transparent 60%);}
+.emoji-main{transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);display:block;line-height:1;position:relative;z-index:1;}
+.product-card:hover .emoji-main{transform:scale(1.18) rotate(-4deg);}
+.hover-overlay{position:absolute;inset:0;background:linear-gradient(155deg,rgba(44,26,14,0.93),rgba(193,96,58,0.88));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.2rem;gap:0.45rem;opacity:0;transition:opacity 0.3s;z-index:2;pointer-events:none;}
+.product-card:hover .hover-overlay{opacity:1;}
+.overlay-title{font-family:'Syne',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.6);}
+.overlay-fact{font-family:'DM Sans',sans-serif;font-size:0.82rem;color:white;text-align:center;line-height:1.6;}
+.overlay-tags{display:flex;gap:0.4rem;flex-wrap:wrap;justify-content:center;}
+.otag{background:rgba(255,255,255,0.18);color:white;padding:0.15rem 0.6rem;border-radius:50px;font-size:0.63rem;font-family:'Syne',sans-serif;font-weight:600;}
+
+.product-body{padding:1.1rem 1.2rem 1.2rem;position:relative;z-index:2;flex:1;display:flex;flex-direction:column;}
+.product-name{font-family:'Playfair Display',serif;font-size:1.02rem;font-weight:700;color:var(--warm-dark);margin-bottom:0.22rem;line-height:1.28;}
+.product-weight{font-size:0.74rem;color:var(--muted);font-family:'Syne',sans-serif;font-weight:600;letter-spacing:0.05em;margin-bottom:0.65rem;}
+.product-tags{display:flex;gap:0.32rem;flex-wrap:wrap;margin-bottom:0.85rem;}
+.ptag{padding:0.16rem 0.6rem;border-radius:50px;font-size:0.64rem;font-family:'Syne',sans-serif;font-weight:700;letter-spacing:0.03em;}
+.ptag-veg{background:#E6F2E8;color:#2D6A31;}
+.ptag-spicy{background:#FDECEA;color:#B71C1C;}
+.ptag-sweet{background:#FFF8E1;color:#E65100;}
+.ptag-jain{background:#E8F5E9;color:#1B5E20;}
+.ptag-diet{background:#F3E5F5;color:#6A1B9A;}
+
+.product-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:0.5rem;}
+.product-price{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:var(--warm-dark);flex-shrink:0;}
+.product-price span{font-size:0.82rem;font-weight:400;color:var(--muted);}
+
+/* ── QTY CONTROLS ── */
+.qty-wrap{flex-shrink:0;}
+/* Zero state: plain + button */
+.plus-only-btn{background:var(--warm-dark);color:white;border:none;width:42px;height:42px;border-radius:50%;font-size:1.3rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1);}
+.plus-only-btn:hover{background:var(--terracotta);transform:scale(1.12) rotate(90deg);}
+/* Active state: - N + pill */
+.qty-pill{display:inline-flex;align-items:center;background:var(--warm-dark);border-radius:50px;overflow:hidden;}
+.qty-minus,.qty-plus{background:none;border:none;color:white;width:36px;height:38px;font-size:1.15rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.18s;flex-shrink:0;}
+.qty-minus:hover{background:rgba(193,96,58,0.7);}
+.qty-plus:hover{background:rgba(255,255,255,0.15);}
+.qty-num{color:white;font-family:'Syne',sans-serif;font-weight:800;font-size:0.9rem;min-width:26px;text-align:center;}
+.qty-pop{animation:qtyPop 0.25s cubic-bezier(0.34,1.56,0.64,1);}
+@keyframes qtyPop{0%{transform:scale(0.55)}60%{transform:scale(1.35)}100%{transform:scale(1)}}
+
+/* FLYING ITEM */
+.flying-item{position:fixed;font-size:1.6rem;pointer-events:none;z-index:9999;will-change:transform,opacity;}
+
+/* ── SHOW MORE ── */
+.show-more-wrap{text-align:center;margin-top:2rem;}
+.show-more-btn{background:white;color:var(--terracotta);border:2px solid var(--terracotta);padding:0.85rem 2.5rem;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;cursor:pointer;transition:all 0.3s;letter-spacing:0.05em;display:inline-flex;align-items:center;gap:0.6rem;box-shadow:0 4px 15px rgba(193,96,58,0.12);}
+.show-more-btn:hover{background:var(--terracotta);color:white;transform:translateY(-2px);box-shadow:0 8px 24px rgba(193,96,58,0.28);}
+
+/* ── ABOUT ── */
+.about-section{background:var(--warm-dark);color:white;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;overflow:hidden;}
+.about-section::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(193,96,58,0.12),transparent 70%);pointer-events:none;}
+.about-visual{position:relative;height:440px;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#3A2010,#5A3520);display:flex;align-items:center;justify-content:center;flex-direction:column;}
+.about-visual::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");}
+.about-emoji-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;padding:2rem;font-size:2.6rem;text-align:center;position:relative;z-index:1;}
+.ae{animation:floatAnim 5s ease infinite;display:block;}
+.ae:nth-child(2){animation-delay:0.5s}.ae:nth-child(3){animation-delay:1s}.ae:nth-child(4){animation-delay:1.5s}.ae:nth-child(5){animation-delay:0.3s}.ae:nth-child(6){animation-delay:0.8s}.ae:nth-child(7){animation-delay:1.3s}.ae:nth-child(8){animation-delay:0.6s}
+@keyframes floatAnim{0%,100%{transform:translateY(0) rotate(0)}33%{transform:translateY(-14px) rotate(4deg)}66%{transform:translateY(6px) rotate(-3deg)}}
+.about-content .section-title{color:white;}
+.about-content .section-label{color:var(--mustard-light);}
+.about-content .section-label::before{background:var(--mustard-light);}
+.about-content p{color:rgba(255,255,255,0.7);line-height:1.9;font-size:0.95rem;margin-bottom:1.3rem;}
+.about-highlights{display:flex;flex-direction:column;gap:0.8rem;margin-top:1.6rem;}
+.highlight-item{display:flex;align-items:center;gap:1rem;padding:0.85rem 1.1rem;background:rgba(255,255,255,0.05);border-radius:12px;border-left:3px solid var(--terracotta);transition:background 0.3s;}
+.highlight-item:hover{background:rgba(255,255,255,0.09);}
+.hi-icon{font-size:1.3rem;}
+.hi-text{font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.88);}
+
+/* ── REVIEWS ── */
+.reviews-section{background:linear-gradient(160deg,var(--parchment) 0%,var(--parchment-dark) 100%);}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.3rem;}
+.review-card{background:var(--card-bg);border-radius:18px;padding:1.7rem;box-shadow:0 4px 18px rgba(44,26,14,0.07);transition:transform 0.3s,box-shadow 0.3s;border:1px solid rgba(193,96,58,0.1);position:relative;}
+.review-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px rgba(44,26,14,0.12);}
+.review-card::before{content:'"';font-family:'Playfair Display',serif;font-size:5rem;color:var(--terracotta);opacity:0.12;position:absolute;top:0.4rem;left:1.1rem;line-height:1;}
+.stars{color:var(--mustard);font-size:1rem;letter-spacing:2px;margin-bottom:0.8rem;}
+.review-text{font-size:0.9rem;color:var(--brown-mid);line-height:1.8;margin-bottom:1rem;}
+.reviewer{display:flex;align-items:center;gap:0.65rem;}
+.reviewer-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;background:linear-gradient(135deg,#EDD5A3,#D4A017);}
+.reviewer-name{font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem;color:var(--warm-dark);}
+.reviewer-loc{font-size:0.7rem;color:var(--muted);}
+
+/* ── CONTACT ── */
+.contact-section{background:linear-gradient(135deg,#2C1A0E,#4A2D1A);color:white;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+.contact-section .section-title{color:white;}
+.contact-section .section-label{color:var(--mustard-light);}
+.contact-section .section-label::before{background:var(--mustard-light);}
+.info-cards{display:flex;flex-direction:column;gap:0.85rem;}
+.info-card{display:flex;align-items:flex-start;gap:1rem;background:rgba(255,255,255,0.06);padding:1rem 1.2rem;border-radius:14px;transition:background 0.3s,transform 0.3s;}
+.info-card:hover{background:rgba(193,96,58,0.18);transform:translateX(5px);}
+.info-icon{width:40px;height:40px;background:var(--terracotta);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+.info-content-title{font-family:'Syne',sans-serif;font-weight:700;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;opacity:0.55;margin-bottom:0.2rem;}
+.info-content-val{font-size:0.9rem;color:rgba(255,255,255,0.88);line-height:1.6;}
+.map-placeholder{border-radius:18px;height:280px;background:rgba(255,255,255,0.04);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.9rem;border:2px solid rgba(193,96,58,0.25);}
+.map-pin{font-size:3rem;animation:bounce 1.5s ease infinite;}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.map-text{font-family:'Syne',sans-serif;font-size:0.84rem;color:rgba(255,255,255,0.65);text-align:center;line-height:1.8;}
+.map-btn{background:var(--terracotta);color:white;padding:0.72rem 1.7rem;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.8rem;text-decoration:none;transition:all 0.3s;display:inline-block;}
+.map-btn:hover{background:var(--terracotta-dark);transform:scale(1.04);}
+
+/* ── FOOTER ── */
+footer{background:#180D05;color:rgba(255,255,255,0.55);text-align:center;padding:2.5rem 2rem;}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:white;margin-bottom:0.25rem;}
+.footer-logo span{color:var(--terracotta);}
+.footer-tagline{font-family:'Syne',sans-serif;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;opacity:0.4;margin-bottom:1.4rem;}
+.footer-links{display:flex;gap:1.5rem;justify-content:center;list-style:none;margin-bottom:1.6rem;flex-wrap:wrap;}
+.footer-links a{color:rgba(255,255,255,0.42);text-decoration:none;font-family:'Syne',sans-serif;font-size:0.76rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.3s;}
+.footer-links a:hover{color:var(--terracotta);}
+.footer-bottom{font-size:0.75rem;border-top:1px solid rgba(255,255,255,0.07);padding-top:1.3rem;}
+
+/* ── CART SIDEBAR ── */
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:10000;opacity:0;pointer-events:none;transition:opacity 0.3s;backdrop-filter:blur(4px);}
+.cart-overlay.open{opacity:1;pointer-events:all;}
+.cart-sidebar{position:fixed;right:0;top:0;bottom:0;width:min(400px,95vw);background:var(--parchment);z-index:10001;transform:translateX(100%);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);display:flex;flex-direction:column;padding:1.8rem;box-shadow:-18px 0 55px rgba(44,26,14,0.2);}
+.cart-sidebar.open{transform:translateX(0);}
+.cart-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.6rem;padding-bottom:1rem;border-bottom:2px solid rgba(193,96,58,0.15);}
+.cart-title{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;}
+.close-btn{background:var(--warm-dark);color:white;border:none;width:32px;height:32px;border-radius:50%;font-size:0.95rem;cursor:pointer;transition:background 0.3s;}
+.close-btn:hover{background:var(--chili);}
+.cart-items{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:0.8rem;}
+.cart-item{display:flex;align-items:center;gap:0.8rem;background:white;border-radius:14px;padding:0.85rem;box-shadow:0 2px 8px rgba(44,26,14,0.06);animation:slideInCart 0.3s ease;}
+@keyframes slideInCart{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:translateX(0)}}
+.ci-emoji{font-size:1.7rem;flex-shrink:0;}
+.ci-info{flex:1;min-width:0;}
+.ci-name{font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem;color:var(--warm-dark);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ci-sub{font-size:0.7rem;color:var(--muted);}
+.ci-price{font-family:'Playfair Display',serif;font-weight:900;color:var(--terracotta);font-size:1rem;white-space:nowrap;flex-shrink:0;}
+.ci-remove{background:none;border:none;font-size:0.9rem;cursor:pointer;opacity:0.35;transition:opacity 0.2s;flex-shrink:0;}
+.ci-remove:hover{opacity:1;color:var(--chili);}
+.cart-footer{padding-top:1.2rem;border-top:2px solid rgba(193,96,58,0.15);}
+.cart-total{display:flex;justify-content:space-between;margin-bottom:1rem;align-items:center;}
+.ct-label{font-family:'Syne',sans-serif;font-weight:600;font-size:0.87rem;}
+.ct-val{font-family:'Playfair Display',serif;font-weight:900;font-size:1.3rem;}
+.checkout-btn{width:100%;background:var(--terracotta);color:white;border:none;padding:0.95rem;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.92rem;cursor:pointer;transition:all 0.3s;box-shadow:0 8px 22px rgba(193,96,58,0.35);}
+.checkout-btn:hover{background:var(--terracotta-dark);transform:scale(1.02);}
+.empty-cart{text-align:center;padding:3rem 1rem;color:var(--muted);}
+.empty-cart .ec-emoji{font-size:3.5rem;display:block;margin-bottom:0.8rem;}
+.empty-cart p{font-family:'Syne',sans-serif;font-size:0.85rem;}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(35px);transition:opacity 0.65s ease,transform 0.65s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+@media(max-width:768px){
+  .reveal{transition:opacity 0.45s ease,transform 0.45s ease;}
+}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%) translateY(120px);background:var(--warm-dark);color:white;padding:0.7rem 1.6rem;border-radius:50px;font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:600;z-index:99999;transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);display:flex;align-items:center;gap:0.5rem;max-width:90vw;white-space:nowrap;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+
+/* ── PARALLAX ── */
+.parallax-layer{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;overflow:hidden;}
+.para-item{position:absolute;font-size:1.4rem;opacity:0.06;will-change:transform;user-select:none;}
+
+/* ── LOADER ── */
+.loader{position:fixed;inset:0;background:var(--warm-dark);z-index:999999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;transition:opacity 0.6s,visibility 0.6s;}
+.loader.done{opacity:0;visibility:hidden;}
+.loader-logo{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:white;text-align:center;line-height:1.25;}
+.loader-logo span{color:var(--terracotta);}
+.loader-logo small{display:block;font-family:'Syne',sans-serif;font-size:0.68rem;letter-spacing:0.15em;color:rgba(255,255,255,0.38);margin-top:0.25rem;}
+.loader-bar-wrap{width:170px;height:3px;background:rgba(255,255,255,0.12);border-radius:3px;overflow:hidden;}
+.loader-bar{height:100%;background:var(--terracotta);animation:loadBar 1.5s ease forwards;border-radius:3px;}
+@keyframes loadBar{from{width:0}to{width:100%}}
+
+/* ════════════════════════════════
+   RESPONSIVE — MOBILE
+════════════════════════════════ */
+@media(max-width:768px){
+  /* Nav */
+  nav{padding:0.85rem 1.2rem;}
+  nav.scrolled{padding:0.65rem 1.2rem;}
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .logo-main{font-size:1.1rem;}
+  .logo-sub{font-size:0.58rem;}
+  .cart-btn{padding:0.55rem 1rem;font-size:0.78rem;}
+
+  /* Hero */
+  .hero{padding:5.5rem 1.2rem 4rem;min-height:auto;flex-direction:column;align-items:flex-start;}
+  .hero::after{height:45px;}
+  .hero-content{display:flex;flex-direction:column;max-width:100%;width:100%;}
+  .hero-badge{order:0;}
+  .hero h1{order:1;}
+  .hero p{order:2;}
+  .hero-visual{
+    position:relative;right:auto;top:auto;transform:none;
+    width:min(240px,72vw);aspect-ratio:1;
+    margin:1rem auto 0.8rem auto;
+    order:3;
+    animation:heroVisualInMobile 1.1s 0.3s cubic-bezier(0.16,1,0.3,1) both;
+  }
+  @keyframes heroVisualInMobile{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:scale(1)}}
+  .hero-ctas{order:4;}
+  .hero-ctas{flex-direction:column;gap:0.7rem;}
+  .btn-primary,.btn-outline{text-align:center;padding:0.82rem 1.6rem;font-size:0.85rem;}
+  .hero h1{font-size:2rem;}
+  .hero p{font-size:0.9rem;}
+
+  /* Stats */
+  .stats-bar{padding:1.6rem 1.2rem;gap:1rem;}
+  .stat-num{font-size:1.75rem;}
+  .stat-label{font-size:0.64rem;}
+  .stat-item{min-width:42%;}
+
+  /* Sections */
+  section{padding:2.8rem 1.2rem;}
+  .section-title{font-size:1.65rem;}
+
+  /* Products — 2 columns */
+  .products-grid{grid-template-columns:repeat(2,1fr);gap:0.8rem;}
+
+  /* Smaller cards on mobile */
+  .product-img-wrap{font-size:2.8rem;}
+  .product-body{padding:0.8rem;}
+  .product-name{font-size:0.84rem;margin-bottom:0.18rem;}
+  .product-weight{font-size:0.66rem;margin-bottom:0.4rem;}
+  .product-tags{margin-bottom:0.55rem;gap:0.22rem;}
+  .ptag{font-size:0.57rem;padding:0.1rem 0.45rem;}
+  .product-price{font-size:1rem;}
+  .product-price span{display:none;}
+  .plus-only-btn{width:34px;height:34px;font-size:1.1rem;}
+  .qty-minus,.qty-plus{width:30px;height:34px;font-size:1rem;}
+  .qty-num{font-size:0.82rem;min-width:22px;}
+
+  /* No hover overlays on touch */
+  .hover-overlay{display:none;}
+
+  /* Search bar */
+  .search-wrap{max-width:100%;}
+  #searchInput{font-size:0.88rem;padding:0.85rem 2.8rem 0.85rem 2.8rem;}
+
+  /* Category filter — horizontal scroll */
+  .cat-filter{flex-wrap:nowrap;overflow-x:auto;padding-bottom:0.4rem;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .cat-filter::-webkit-scrollbar{display:none;}
+  .cat-btn{flex-shrink:0;font-size:0.73rem;padding:0.45rem 1rem;}
+
+  /* About */
+  .about-section{grid-template-columns:1fr;gap:2rem;}
+  .about-visual{height:240px;}
+  .about-emoji-grid{font-size:1.9rem;gap:0.8rem;}
+
+  /* Reviews */
+  .reviews-grid{grid-template-columns:1fr;}
+
+  /* Contact */
+  .contact-section{grid-template-columns:1fr;gap:2rem;}
+  .map-placeholder{height:200px;}
+}
+
+@media(max-width:380px){
+  .products-grid{gap:0.6rem;}
+  .product-body{padding:0.65rem;}
+  .product-name{font-size:0.78rem;}
+  .product-price{font-size:0.95rem;}
+  .plus-only-btn{width:30px;height:30px;font-size:1rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-logo">Shree Krishna<br><span>Hot &amp; Fresh Chips</span><small>Est. Ghatkopar, Mumbai</small></div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- PARALLAX -->
+<div class="parallax-layer" id="parallaxLayer">
+  <div class="para-item" style="top:10%;left:5%">🌿</div>
+  <div class="para-item" style="top:22%;left:88%">🌾</div>
+  <div class="para-item" style="top:42%;left:12%">🌶️</div>
+  <div class="para-item" style="top:58%;left:82%">🍃</div>
+  <div class="para-item" style="top:74%;left:6%">🌰</div>
+  <div class="para-item" style="top:16%;left:52%">✦</div>
+  <div class="para-item" style="top:85%;left:42%">🌾</div>
+  <div class="para-item" style="top:33%;left:70%">🌿</div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="logo">
+    <span class="logo-main">Shree Krishna<span class="logo-dot"> ✦</span></span>
+    <span class="logo-sub">Hot &amp; Fresh Chips</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="cart-btn" id="cartBtn">🛒 Cart <span class="cart-count" id="cartCount">0</span></button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header"><button class="mobile-close" id="mobileClose">✕</button></div>
+  <a href="#products" class="mob-link">Products</a>
+  <a href="#about" class="mob-link">About Us</a>
+  <a href="#reviews" class="mob-link">Reviews</a>
+  <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge">🏆 Mumbai's Beloved Snack Brand</div>
+    <h1>Every Bite, <em>Honest</em> &amp; <em>Fresh</em></h1>
+    <p>Handcrafted khakhras, crispy bhakhris, banana chips &amp; more — made with pure ingredients and generations of love, straight from Ghatkopar.</p>
+    <div class="hero-ctas">
+      <a href="#products" class="btn-primary">Explore Snacks ↓</a>
+      <a href="#about" class="btn-outline">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="bowl-scene">
+      <div class="falling-zone">
+        <span class="snack-fall" style="--left:22%;--dur:2.6s;--delay:0.2s;--rot:-15deg">🫓</span>
+        <span class="snack-fall" style="--left:48%;--dur:2.2s;--delay:0.7s;--rot:12deg">🍪</span>
+        <span class="snack-fall" style="--left:68%;--dur:2.8s;--delay:1.1s;--rot:-20deg">🌀</span>
+        <span class="snack-fall" style="--left:35%;--dur:2.4s;--delay:1.6s;--rot:8deg">🍟</span>
+        <span class="snack-fall" style="--left:58%;--dur:2.9s;--delay:0.4s;--rot:-10deg">🥜</span>
+        <span class="snack-fall" style="--left:15%;--dur:2.3s;--delay:2.0s;--rot:18deg">🌾</span>
+        <span class="snack-fall" style="--left:78%;--dur:2.7s;--delay:1.3s;--rot:-8deg">🫘</span>
+        <span class="snack-fall" style="--left:42%;--dur:2.1s;--delay:2.4s;--rot:22deg">🧀</span>
+        <span class="snack-fall" style="--left:62%;--dur:3.0s;--delay:0.9s;--rot:-18deg">🍌</span>
+        <span class="snack-fall" style="--left:28%;--dur:2.5s;--delay:1.8s;--rot:5deg">🌽</span>
+      </div>
+      <svg class="bowl-svg" viewBox="0 0 380 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="190" cy="212" rx="155" ry="16" fill="rgba(44,26,14,0.18)"/>
+        <path d="M42 100 Q42 205 190 205 Q338 205 338 100" fill="#F5E6C8" stroke="#C1603A" stroke-width="2.5"/>
+        <path d="M42 100 Q80 85 190 85 Q300 85 338 100" fill="#EDD5A3" stroke="#C1603A" stroke-width="2.5"/>
+        <ellipse cx="190" cy="100" rx="148" ry="18" fill="#D4A017" stroke="#C1603A" stroke-width="2"/>
+        <ellipse cx="190" cy="100" rx="80" ry="7" fill="rgba(255,255,255,0.2)"/>
+        <path d="M60 106 Q60 195 190 195 Q320 195 320 106" fill="url(#bowlGrad)"/>
+        <defs><radialGradient id="bowlGrad" cx="50%" cy="30%" r="70%"><stop offset="0%" stop-color="#FDECC8"/><stop offset="100%" stop-color="#EDD099"/></radialGradient></defs>
+        <circle cx="95" cy="155" r="5" fill="rgba(193,96,58,0.25)"/>
+        <circle cx="285" cy="155" r="5" fill="rgba(193,96,58,0.25)"/>
+        <circle cx="190" cy="175" r="6" fill="rgba(193,96,58,0.2)"/>
+      </svg>
+      <div class="bowl-glow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item reveal"><span class="stat-num" data-count="15">0</span><span class="stat-label">Years of Freshness</span></div>
+  <div class="stat-item reveal"><span class="stat-num" data-count="60">0</span><span class="stat-label">Snack Varieties</span></div>
+  <div class="stat-item reveal"><span class="stat-num" data-count="10000">0</span><span class="stat-label">Happy Customers</span></div>
+  <div class="stat-item reveal"><span class="stat-num" data-count="4.8">0</span><span class="stat-label">Google Rating ⭐</span></div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+<!-- PRODUCTS -->
+<section id="products" class="products-section">
+  <div class="section-label reveal">Our Menu</div>
+  <h2 class="section-title reveal">Taste the <em style="font-style:italic;color:var(--terracotta)">Tradition</em></h2>
+  <p class="section-sub reveal" style="margin-bottom:0">Hover any product to see flavour notes. Tap + to add to cart — watch the quantity update right on the card!</p>
+
+  <!-- SEARCH -->
+  <div class="search-wrap reveal" style="margin-top:1.8rem">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Search — try 'methi', 'banana', 'nachos', 'jain'…" autocomplete="off" spellcheck="false">
+    <button class="search-clear" id="searchClear" aria-label="Clear">✕</button>
+  </div>
+
+  <!-- CATEGORY FILTER -->
+  <div class="cat-filter reveal" id="catFilter"></div>
+
+  <!-- GRID -->
+  <div class="products-grid" id="productsGrid"></div>
+  <div class="no-results" id="noResults"><span class="nr-emoji">🤔</span><p>No snacks found for "<span id="noResultsTerm"></span>"<br>Try a different word!</p></div>
+
+  <!-- SHOW MORE (mobile) -->
+  <div class="show-more-wrap" id="showMoreWrap" style="display:none">
+    <button class="show-more-btn" id="showMoreBtn">Show More Snacks ↓</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-visual reveal">
+    <div class="about-emoji-grid">
+      <span class="ae">🌾</span><span class="ae">🌿</span><span class="ae">🌶️</span><span class="ae">🫚</span>
+      <span class="ae">🧄</span><span class="ae">🌰</span><span class="ae">🫙</span><span class="ae">🍃</span>
+    </div>
+    <div style="text-align:center;padding:0 1.5rem 1.5rem;position:relative;z-index:1">
+      <div style="font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:900;color:white;margin-bottom:0.3rem">Pure. Natural. Honest.</div>
+      <div style="font-family:'Syne',sans-serif;font-size:0.66rem;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-transform:uppercase">Zero preservatives · 100% Vegetarian</div>
+    </div>
+  </div>
+  <div class="about-content">
+    <div class="section-label reveal">Our Story</div>
+    <h2 class="section-title reveal">Crafted with Love in <em style="font-style:italic;color:var(--mustard-light)">Ghatkopar</em></h2>
+    <p class="reveal">Shree Krishna Hot & Fresh Chips began as a small family-run shop in the heart of Ghatkopar East, Mumbai — guided by the belief that honest snacks need no shortcuts.</p>
+    <p class="reveal">From signature Dhebra Khakhras to crispy banana chips, every product is made in small batches. No artificial colors. No preservatives. Just real ingredients and real love.</p>
+    <div class="about-highlights reveal">
+      <div class="highlight-item"><span class="hi-icon">🌿</span><span class="hi-text">100% Natural — No Artificial Preservatives</span></div>
+      <div class="highlight-item"><span class="hi-icon">🟢</span><span class="hi-text">Entirely Vegetarian — Jain Options Available</span></div>
+      <div class="highlight-item"><span class="hi-icon">📦</span><span class="hi-text">Pan-India Shipping · WhatsApp Orders Welcome</span></div>
+      <div class="highlight-item"><span class="hi-icon">🏅</span><span class="hi-text">FSSAI Certified · Quality Guaranteed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="section-label reveal">Customer Love</div>
+  <h2 class="section-title reveal">What Mumbai <em style="font-style:italic;color:var(--terracotta)">Craves</em></h2>
+  <p class="section-sub reveal">Real reviews from real snack lovers across the city and beyond.</p>
+  <div class="reviews-grid" id="reviewsGrid"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div>
+    <div class="section-label reveal">Find Us</div>
+    <h2 class="section-title reveal">Visit Us in <em style="font-style:italic;color:var(--mustard-light)">Ghatkopar</em></h2>
+    <p style="color:rgba(255,255,255,0.6);margin-bottom:1.8rem;line-height:1.85;font-size:0.92rem" class="reveal">Walk into our store and breathe in the aroma of freshly made snacks. Or order online!</p>
+    <div class="info-cards reveal">
+      <div class="info-card"><div class="info-icon">📍</div><div><div class="info-content-title">Address</div><div class="info-content-val">Neelkanth Sadan, Pant Nagar,<br>Ghatkopar East, Mumbai — 400077</div></div></div>
+      <div class="info-card"><div class="info-icon">📞</div><div><div class="info-content-title">Phone</div><div class="info-content-val">063866 23780</div></div></div>
+      <div class="info-card"><div class="info-icon">🕐</div><div><div class="info-content-title">Hours</div><div class="info-content-val">Mon – Sat: 9:00 AM – 9:00 PM<br>Sunday: 10:00 AM – 7:00 PM</div></div></div>
+      <div class="info-card"><div class="info-icon">⭐</div><div><div class="info-content-title">Google Rating</div><div class="info-content-val">4.8 / 5 Stars on Google Maps</div></div></div>
+    </div>
+  </div>
+  <div class="reveal">
+    <div class="map-placeholder">
+      <div class="map-pin">📍</div>
+      <div class="map-text"><strong style="color:white;font-family:'Playfair Display',serif;font-size:1.05rem">Shree Krishna Hot & Fresh Chips</strong><br>Neelkanth Sadan, Pant Nagar<br>Ghatkopar East, Mumbai — 400077</div>
+      <a href="https://maps.google.com/?q=Neelkanth+Sadan+Pant+Nagar+Ghatkopar+East+Mumbai" target="_blank" class="map-btn">Open in Google Maps →</a>
+    </div>
+    <div style="margin-top:1.4rem;background:rgba(255,255,255,0.05);border-radius:16px;padding:1.4rem">
+      <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.85rem;color:white;margin-bottom:0.85rem">📲 Order via WhatsApp</div>
+      <a href="https://wa.me/916386623780" target="_blank" style="display:inline-flex;align-items:center;gap:0.6rem;background:#25D366;color:white;padding:0.8rem 1.6rem;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;text-decoration:none;font-size:0.85rem">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Shree Krishna <span>✦</span></div>
+  <div class="footer-tagline">Hot & Fresh Chips · Ghatkopar East, Mumbai</div>
+  <ul class="footer-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="footer-bottom">© 2024 Shree Krishna Hot & Fresh Chips. All rights reserved. · Made with ❤️ in Mumbai</div>
+</footer>
+
+<!-- CART -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h2 class="cart-title">Your Cart 🛒</h2>
+    <button class="close-btn" id="closeCart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-total"><span class="ct-label">Total</span><span class="ct-val" id="cartTotal">₹0</span></div>
+    <button class="checkout-btn" id="checkoutBtn">Order via WhatsApp 💬</button>
+  </div>
+</div>
+
+<div class="toast" id="toast">Added!</div>
+
+<script>
+// ══════════════════════════════════
+//  DATA
+// ══════════════════════════════════
+const products=[
+  {id:1,name:"Pani Puri Khakhra",category:"Khakhra",emoji:"🌀",weight:"200g",price:140,tags:["veg"],info:"Street-style golgappa flavors baked into a crispy khakra. Tangy, spicy, nostalgic!"},
+  {id:2,name:"Punjabi Wheat Khakhra",category:"Khakhra",emoji:"🌾",weight:"200g",price:140,tags:["veg"],info:"Bold Punjabi masalas with wholesome wheat. Hearty comfort in every bite."},
+  {id:3,name:"Jowari Sada Dhebra Khakhra",category:"Khakhra",emoji:"🌿",weight:"200g",price:140,tags:["veg","diet"],info:"Pure jowar flour, light, earthy and guilt-free. Village-style crunch."},
+  {id:4,name:"Garlic Methi Dhebra Khakhra",category:"Khakhra",emoji:"🧄",weight:"200g",price:140,tags:["veg","spicy"],info:"Aromatic garlic + fresh methi leaves. Bold, rustic, irresistible."},
+  {id:5,name:"Corn Cheese Palak Dhebra Khakhra",category:"Khakhra",emoji:"🌽",weight:"200g",price:140,tags:["veg"],info:"Creamy cheese, spinach & golden corn — indulgent yet wholesome fusion."},
+  {id:6,name:"Tomato Paneer Basil Dhebra Khakhra",category:"Khakhra",emoji:"🍅",weight:"200g",price:180,tags:["veg"],info:"Tangy tomato + creamy paneer + basil. Where India meets Italy!"},
+  {id:7,name:"Lila Vatana Dhebra Khakhra",category:"Khakhra",emoji:"🫛",weight:"200g",price:140,tags:["veg"],info:"Fresh green peas + mild spices. Naturally sweet, protein-rich crunch."},
+  {id:8,name:"Mixed Herbs Dhebra Khakhra",category:"Khakhra",emoji:"🌿",weight:"200g",price:140,tags:["veg"],info:"Italian herbs & spices baked in. Continental zing meets Indian crunch."},
+  {id:9,name:"Methi Dhebra Khakhra",category:"Khakhra",emoji:"🍃",weight:"200g",price:140,tags:["veg"],info:"Classic fresh methi + traditional spices. Best with tea or curd."},
+  {id:10,name:"Oats Maggi Dhebra Khakhra",category:"Khakhra",emoji:"🍜",weight:"200g",price:140,tags:["veg","spicy"],info:"Oats + Maggi masala — nutrition meets nostalgia. Spicy, aromatic delight!"},
+  {id:11,name:"Makai Methi Masala Dhebra Khakhra",category:"Khakhra",emoji:"🌽",weight:"200g",price:140,tags:["veg"],info:"Golden makai + methi + masala. Rich roasted aroma in every bite."},
+  {id:12,name:"Bajri Methi Garlic Dhebra Khakhra",category:"Khakhra",emoji:"🌾",weight:"200g",price:140,tags:["veg"],info:"Wholesome bajra + garlic + methi. High fiber, bold and earthy."},
+  {id:13,name:"Jowar Methi Masala Dhebra Khakhra",category:"Khakhra",emoji:"🌿",weight:"200g",price:140,tags:["veg","diet"],info:"Jowar + methi + spices. Light on tummy, heavy on taste."},
+  {id:14,name:"Wheat Sada Dhebra Khakhra",category:"Khakhra",emoji:"🫓",weight:"200g",price:140,tags:["veg"],info:"Simple wheat dhebra, roasted with love. Perfect with pickle or chai."},
+  {id:15,name:"Jeera Dhebra Khakhra",category:"Khakhra",emoji:"⭐",weight:"200g",price:140,tags:["veg"],info:"Fragrant jeera roasted to crisp perfection. Earthy, aromatic, homely."},
+  {id:16,name:"Oats Sada Dhebra Khakhra",category:"Khakhra",emoji:"🌾",weight:"200g",price:140,tags:["veg","diet"],info:"Wholesome oats, roasted crisp. Light, nourishing, keeps you full."},
+  {id:17,name:"Dahi Kothmir Dhebra Khakhra",category:"Khakhra",emoji:"🌿",weight:"200g",price:140,tags:["veg"],info:"Tangy curd + fresh coriander. Refreshing, cooling, zesty — homemade feel."},
+  {id:18,name:"Methi Masala Dhebra Khakhra",category:"Khakhra",emoji:"🔥",weight:"200g",price:140,tags:["veg","spicy"],info:"Spicy upgrade to classic methi. Aromatic masalas, perfectly crisp."},
+  {id:19,name:"Chaat Masala Dhebra Khakhra",category:"Khakhra",emoji:"✨",weight:"200g",price:140,tags:["veg","spicy"],info:"Chatpata street-style kick in every bite. Bold, tangy, impossible to stop!"},
+  {id:20,name:"Mangroli Dhebra Khakhra",category:"Khakhra",emoji:"🏺",weight:"200g",price:140,tags:["veg"],info:"Authentic Gujarati grandma's recipe. Pure ingredients, earthy soul."},
+  {id:21,name:"Oats Methi Dhebra Khakhra",category:"Khakhra",emoji:"🍃",weight:"200g",price:140,tags:["veg","diet"],info:"Oats + methi combo. Light, active, desi touch without guilt."},
+  {id:22,name:"Gud Nachni Dhebra Khakhra",category:"Khakhra",emoji:"🤎",weight:"200g",price:140,tags:["veg","sweet"],info:"Jaggery + ragi — naturally sweet, calcium-rich, childhood warmth."},
+  {id:23,name:"Masala Dhebra Khakhra",category:"Khakhra",emoji:"🌶️",weight:"200g",price:140,tags:["veg","spicy"],info:"Classic Indian masala blend. Crunchy, aromatic, satisfying anytime."},
+  {id:24,name:"Farali Rajgira Khakhra",category:"Khakhra",emoji:"🕉️",weight:"200g",price:190,tags:["veg","diet"],info:"Vrat-friendly rajgira (amaranth) flour. Gentle crisp, natural nuttiness."},
+  {id:25,name:"Roasted Methi Masala Bhakri",category:"Bhakri",emoji:"🌿",weight:"200g",price:155,tags:["veg","spicy"],info:"Fresh methi + Indian masalas. Crunchy, wholesome comfort snack."},
+  {id:26,name:"Roasted Bajra Bhakri",category:"Bhakri",emoji:"🌾",weight:"200g",price:155,tags:["veg"],info:"Nutritious pearl millet, rich in fiber and energy. Traditional Gujarati taste."},
+  {id:27,name:"Roasted Chilli Garlic Bhakri",category:"Bhakri",emoji:"🔥",weight:"200g",price:155,tags:["veg","spicy"],info:"Bold red chillies + roasted garlic. Fiery, crispy, perfect chai-time partner."},
+  {id:28,name:"Roasted Methi Bhakri",category:"Bhakri",emoji:"🍃",weight:"200g",price:155,tags:["veg"],info:"Premium wheat + fresh fenugreek. Lightly spiced, homely aroma."},
+  {id:29,name:"Roasted Corn Methi Bhakri",category:"Bhakri",emoji:"🌽",weight:"200g",price:155,tags:["veg"],info:"Golden corn flour + methi. Hearty, wholesome, great with curd."},
+  {id:30,name:"Roasted Plain Bhakri",category:"Bhakri",emoji:"🫓",weight:"200g",price:155,tags:["veg"],info:"Simple, clean, timeless. Pairs beautifully with any dip or curry."},
+  {id:31,name:"Roasted Multigrain Bhakri",category:"Bhakri",emoji:"🌾",weight:"200g",price:155,tags:["veg","diet"],info:"Power-packed multiple grains. Rich in fiber, nutrients, perfectly roasted."},
+  {id:32,name:"Roasted Gud Bhakri",category:"Bhakri",emoji:"🍯",weight:"200g",price:155,tags:["veg","sweet"],info:"Pure jaggery sweetness + rustic charm. Comforting, balanced indulgence."},
+  {id:33,name:"Roasted Nachni Bhakri",category:"Bhakri",emoji:"🤎",weight:"200g",price:155,tags:["veg","diet"],info:"Ragi packed with calcium and fiber. Nutty aroma, crisp, guilt-free."},
+  {id:34,name:"Roasted Jowar Bhakri",category:"Bhakri",emoji:"🌿",weight:"200g",price:155,tags:["veg","diet"],info:"Pure jowar — naturally gluten-free, high fiber, golden crisp."},
+  {id:35,name:"Roasted Jeera Bhakri",category:"Bhakri",emoji:"✦",weight:"200g",price:155,tags:["veg"],info:"Fragrant cumin seeds roasted into every bite. Warm, soothing, aromatic."},
+  {id:36,name:"Sev Puri",category:"Puri",emoji:"🌀",weight:"250g",price:140,tags:["veg","spicy"],info:"Mumbai street-food magic! Crispy puris with authentic sev masala flavors."},
+  {id:37,name:"Whole Wheat Sev Puri",category:"Puri",emoji:"🌾",weight:"250g",price:155,tags:["veg"],info:"Whole wheat + sev masala. Guilt-free street snack in crunchy form."},
+  {id:38,name:"Corn Puri Masala",category:"Puri",emoji:"🌽",weight:"200g",price:155,tags:["veg","spicy"],info:"Golden corn flour + signature masalas. Sweet corniness + chatpata spice."},
+  {id:39,name:"Methi Thepla Puri",category:"Puri",emoji:"🍃",weight:"200g",price:140,tags:["veg"],info:"Gujarati methi masala in a crunchy puri form. Wholesome, aromatic."},
+  {id:40,name:"Masala Sabudana Puri",category:"Puri",emoji:"🕉️",weight:"200g",price:170,tags:["veg"],info:"Spiced sabudana puris — fasting-friendly, light, crispy, satisfying."},
+  {id:41,name:"Sada Sabudana Puri",category:"Puri",emoji:"⚪",weight:"200g",price:170,tags:["veg","diet"],info:"Pure sabudana, lightly salted. Gluten-free, easy to digest, vrat-friendly."},
+  {id:42,name:"Multigrain Puri",category:"Puri",emoji:"🌾",weight:"250g",price:220,tags:["veg","diet"],info:"Power-packed multi-grain puri. High fiber, light on tummy, full on flavor."},
+  {id:43,name:"Sindhi Style Dal Pakwan Puri",category:"Puri",emoji:"🫙",weight:"250g",price:200,tags:["veg"],info:"Iconic Sindhi breakfast in crunchy form. Rich lentil notes, authentic spice."},
+  {id:44,name:"Masala Nachos Puri",category:"Puri",emoji:"🌶️",weight:"200g",price:170,tags:["veg","spicy"],info:"Crispy, spicy Indian masala nacho puri. Perfect for movie nights!"},
+  {id:45,name:"Lime And Chilli Masala Puri",category:"Puri",emoji:"🍋",weight:"200g",price:170,tags:["veg","spicy"],info:"Tangy lime + fiery chilli. Vibrant, refreshing, bold and punchy."},
+  {id:46,name:"Bajri Vada Puri",category:"Puri",emoji:"🤎",weight:"200g",price:170,tags:["veg"],info:"Traditional bajra flour, village-style flavor. Nutty, rustic, crunchy."},
+  {id:47,name:"Triangle Jeera Puri",category:"Puri",emoji:"▲",weight:"250g",price:170,tags:["veg"],info:"Triangle-shaped jeera puris. Cumin warmth + crunch — pairs with chai."},
+  {id:48,name:"Salted Pakwan Puri",category:"Puri",emoji:"🫓",weight:"200g",price:140,tags:["veg"],info:"Thin, flaky, lightly salted. Classic Sindhi crispiness. Addictive!"},
+  {id:49,name:"Masala Pakwan Puri",category:"Puri",emoji:"✨",weight:"200g",price:140,tags:["veg","spicy"],info:"Masala-coated pakwan. Chatpata kick in every crispy bite."},
+  {id:50,name:"Chorafali Puri",category:"Puri",emoji:"🌬️",weight:"200g",price:200,tags:["veg"],info:"Light as air, crisp as a dream! Festive favorite with tangy masala coating."},
+  {id:51,name:"Jain Cheese Jalapeno Nachos",category:"Nachos",emoji:"🧀",weight:"200g",price:190,tags:["veg","jain","spicy"],info:"Jain-friendly! Bold jalapeno heat + creamy cheese, no onion/garlic."},
+  {id:52,name:"Disco Masala Papad",category:"Nachos",emoji:"🎉",weight:"200g",price:185,tags:["veg","spicy"],info:"Colorful, crunchy papads tossed in zesty masalas. Fun, festive, tangy!"},
+  {id:53,name:"Salted Nachos",category:"Nachos",emoji:"🧂",weight:"200g",price:190,tags:["veg"],info:"Premium corn flour, lightly salted. Clean, crisp, classic. Great with dips."},
+  {id:54,name:"Cheese Nachos",category:"Nachos",emoji:"🧀",weight:"200g",price:190,tags:["veg"],info:"Creamy cheese seasoning on every nacho. Rich, indulgent, baked crisp."},
+  {id:55,name:"Peri Peri Nachos",category:"Nachos",emoji:"🔥",weight:"200g",price:190,tags:["veg","jain","spicy"],info:"Fiery Peri Peri, Jain-friendly! Bold, tangy, baked to light crisp texture."},
+  {id:56,name:"Salted Nachos Papad",category:"Nachos",emoji:"🫙",weight:"100g",price:80,tags:["veg"],info:"Crispy, lightly salted nachos papad. Pure snacking joy, pairs with dips."},
+  {id:57,name:"Masala Nachos Papad",category:"Nachos",emoji:"🌶️",weight:"100g",price:80,tags:["veg","spicy"],info:"Desi masala + nacho crunch combo. Chatpata, thin, perfectly spiced."},
+  {id:58,name:"Masala Nachos",category:"Nachos",emoji:"🌽",weight:"200g",price:190,tags:["veg","spicy"],info:"Corn + aromatic Indian seasonings. Bold, baked, not fried. Desi twist!"},
+  {id:59,name:"Pista Peanuts",category:"Peanuts & Chana",emoji:"🥜",weight:"200g",price:190,tags:["veg"],info:"Peanuts + pistachio richness. Premium, protein-packed, roasted perfection."},
+  {id:60,name:"Salted Peanuts Without Skin",category:"Peanuts & Chana",emoji:"🧂",weight:"250g",price:125,tags:["veg"],info:"Smooth, clean, roasted golden. Perfectly salted, mess-free, classic crunch."},
+  {id:61,name:"Unsalted Peanuts (Without Skin)",category:"Peanuts & Chana",emoji:"🤍",weight:"200g",price:130,tags:["veg","diet"],info:"Pure peanuts, nothing else. Slow-roasted, natural, zero additives."},
+  {id:62,name:"Dabeli Masala Peanuts",category:"Peanuts & Chana",emoji:"✨",weight:"250g",price:140,tags:["veg","spicy"],info:"Kutchi Dabeli flavor on roasted peanuts. Tangy, bold, street-food treat!"},
+  {id:63,name:"Salted Peanuts (With Skin)",category:"Peanuts & Chana",emoji:"🥜",weight:"250g",price:125,tags:["veg"],info:"Timeless classic. Roasted till golden, perfectly salted, protein-rich."},
+  {id:64,name:"Coated Masala Peanuts",category:"Peanuts & Chana",emoji:"🌶️",weight:"250g",price:190,tags:["veg","spicy"],info:"Spicy crispy coat on peanuts. Double crunch, bold masala punch."},
+  {id:65,name:"Mahabaleshwar Black Chana",category:"Peanuts & Chana",emoji:"⚫",weight:"200g",price:135,tags:["veg","diet"],info:"Slow-roasted mountain chana. Deep, earthy, protein and fiber rich."},
+  {id:66,name:"Diet Bombay Chaat Chana",category:"Peanuts & Chana",emoji:"🌆",weight:"200g",price:160,tags:["veg","diet","spicy"],info:"Tangy Bombay chaat on roasted chana. Street flavor, zero guilt."},
+  {id:67,name:"Nimbu Pudina Chana",category:"Peanuts & Chana",emoji:"🍋",weight:"200g",price:170,tags:["veg","spicy"],info:"Zesty lemon + cool mint. Refreshing, crisp, high protein."},
+  {id:68,name:"Mixed Shing Chana",category:"Peanuts & Chana",emoji:"🥜",weight:"200g",price:125,tags:["veg"],info:"Roasted peanuts + black chana blend. Protein combo, lightly spiced."},
+  {id:69,name:"Black Pepper Chana Masala",category:"Peanuts & Chana",emoji:"⚫",weight:"200g",price:170,tags:["veg","spicy"],info:"Bold black pepper + roasted chickpeas. Sharp, spicy, addictive warmth."},
+  {id:70,name:"Golden Chana",category:"Peanuts & Chana",emoji:"🟡",weight:"200g",price:100,tags:["veg","diet"],info:"Dry-roasted, crunchy, lightly seasoned. High protein, no oil, clean snack."},
+  {id:71,name:"Roasted Hing Jeera Chana",category:"Peanuts & Chana",emoji:"🧅",weight:"200g",price:170,tags:["veg"],info:"Asafoetida + cumin warmth. Aromatic, digestive, soulfully traditional."},
+  {id:72,name:"Mahabaleshwar White Chana",category:"Peanuts & Chana",emoji:"⚪",weight:"200g",price:135,tags:["veg","diet"],info:"Premium farm-sourced, roasted for ultimate crunch. Subtly nutty, protein-rich."},
+  {id:73,name:"Red Long Masala Banana Chips",category:"Banana Chips",emoji:"🍌",weight:"200g",price:200,tags:["veg","spicy"],info:"Diet roasted! Red masala coating on crispy long banana chips."},
+  {id:74,name:"Cream And Onion Round Banana Chips",category:"Banana Chips",emoji:"🍌",weight:"250g",price:220,tags:["veg"],info:"Smooth creaminess + gentle onion tang on crunchy banana chips."},
+  {id:75,name:"Extra Thin Mari Long Banana Chips",category:"Banana Chips",emoji:"🍌",weight:"200g",price:210,tags:["veg","spicy"],info:"Delicately sliced, black pepper seasoned. Subtle heat, extra crunch."},
+  {id:76,name:"Spicy Red Round Masala Banana Chips",category:"Banana Chips",emoji:"🍌",weight:"200g",price:200,tags:["veg","spicy"],info:"Red masala with great chatpata spiciness. A tour of heaven of taste!"},
+  {id:77,name:"Potato Cream And Onion French Fries",category:"Fries & More",emoji:"🍟",weight:"200g",price:140,tags:["veg"],info:"Café-style cream & onion fries. Crispy, gourmet flavor at home."},
+  {id:78,name:"Potato Cheese French Fries",category:"Fries & More",emoji:"🧀",weight:"200g",price:140,tags:["veg"],info:"Rich cheese seasoning, crispy perfection. Cheesy bliss from start to finish!"},
+  {id:79,name:"Mixed Three In One Chana Jor Garam",category:"Fries & More",emoji:"🥣",weight:"200g",price:155,tags:["veg","spicy"],info:"Three kinds of chana, boldly spiced. Street-style energy in a pack!"},
+  {id:80,name:"Yellow Chana Jor Garam",category:"Fries & More",emoji:"🟡",weight:"200g",price:155,tags:["veg","spicy"],info:"Bright, crunchy, desi street-snack zing. Protein-packed, flavorful."},
+  {id:81,name:"Watana Jor Garam",category:"Fries & More",emoji:"🫛",weight:"200g",price:155,tags:["veg","spicy"],info:"Crunchy green peas twist on Jor Garam. Light, spicy, irresistible!"},
+  {id:82,name:"Black Chana Jor Garam",category:"Fries & More",emoji:"⚫",weight:"200g",price:155,tags:["veg","spicy"],info:"Rich, earthy black chana. Tangy-spicy punch, protein-rich tradition."},
+  {id:83,name:"Nuts Chana Jor Garam Mixed",category:"Fries & More",emoji:"🥜",weight:"200g",price:155,tags:["veg","spicy"],info:"Crunchy nuts + spicy chana. Power snack — energizing and delicious!"},
+  {id:84,name:"Mini Soya Chakli",category:"Fries & More",emoji:"🌀",weight:"250g",price:190,tags:["veg","diet"],info:"Protein-rich soya flour chakli. Nutritious, crunchy, munch-worthy health snack."},
+  {id:85,name:"Sugar Free Khajur Wafer Biscuits",category:"Sweets",emoji:"🍪",weight:"200g",price:330,tags:["veg","sweet"],info:"Dates fusion with desi pure cow ghee, sandwiched between wafer bites."},
+];
+
+const categories=["All",...new Set(products.map(p=>p.category))];
+const tagMap={veg:"ptag-veg",spicy:"ptag-spicy",sweet:"ptag-sweet",jain:"ptag-jain",diet:"ptag-diet"};
+const tagLabel={veg:"🟢 Veg",spicy:"🌶️ Spicy",sweet:"🍯 Sweet",jain:"🙏 Jain",diet:"💪 Diet"};
+
+let activeCategory="All";
+let searchQuery="";
+let cart={};         // { productId: qty }
+let visibleRows=4;
+const ROWS_PER_PAGE=4;
+const COLS_MOBILE=2;
+const isMobile=()=>window.innerWidth<769;
+
+// ── LOADER ──
+window.addEventListener('load',()=>setTimeout(()=>{document.getElementById('loader').classList.add('done');initCounters();revealOnScroll();if(window._reobserve)window._reobserve();},1700));
+
+// ── MOBILE BOWL REPOSITION ──
+if(window.innerWidth<=768){
+  const visual=document.querySelector('.hero-visual');
+  const ctas=document.querySelector('.hero-ctas');
+  const content=document.querySelector('.hero-content');
+  if(visual&&ctas&&content){
+    content.insertBefore(visual,ctas);
+  }
+}
+
+// ── HAMBURGER ──
+const ham=document.getElementById('hamburger');
+const mob=document.getElementById('mobileMenu');
+ham.addEventListener('click',()=>mob.classList.toggle('open'));
+document.getElementById('mobileClose').addEventListener('click',()=>mob.classList.remove('open'));
+document.querySelectorAll('.mob-link').forEach(a=>a.addEventListener('click',()=>mob.classList.remove('open')));
+
+// ── NAVBAR SCROLL ──
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60);
+  updateParallax(); revealOnScroll();
+});
+
+// ── PARALLAX ──
+function updateParallax(){
+  const sy=window.scrollY;
+  document.querySelectorAll('.para-item').forEach((el,i)=>el.style.transform=`translateY(${sy*(0.04+i%4*0.015)}px)`);
+}
+
+// ── MARQUEE ──
+const mItems=["Khakhra","Bhakri","Banana Chips","Nachos","Puri","Peanuts","Chana","French Fries","Chakli","Papad","100% Vegetarian","No Preservatives","Made Fresh Daily","Ghatkopar Mumbai"];
+const track=document.getElementById('marqueeTrack');
+[...mItems,...mItems].forEach(t=>track.innerHTML+=`<span class="marquee-item"><span class="marquee-dot"></span>${t}</span>`);
+
+// ── CATEGORY FILTER ──
+const catFilter=document.getElementById('catFilter');
+categories.forEach(cat=>{
+  const btn=document.createElement('button');
+  btn.className='cat-btn'+(cat==='All'?' active':'');
+  btn.textContent=cat;
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    activeCategory=cat; visibleRows=ROWS_PER_PAGE; renderProducts();
+  });
+  catFilter.appendChild(btn);
+});
+
+// ── SEARCH ──
+const searchInput=document.getElementById('searchInput');
+const searchClear=document.getElementById('searchClear');
+searchInput.addEventListener('input',()=>{
+  searchQuery=searchInput.value.trim().toLowerCase();
+  searchClear.classList.toggle('visible',searchQuery.length>0);
+  visibleRows=ROWS_PER_PAGE; renderProducts();
+});
+searchClear.addEventListener('click',()=>{
+  searchInput.value=''; searchQuery='';
+  searchClear.classList.remove('visible');
+  visibleRows=ROWS_PER_PAGE; renderProducts(); searchInput.focus();
+});
+
+// ── GET FILTERED ──
+function getFiltered(){
+  let list=activeCategory==='All'?products:products.filter(p=>p.category===activeCategory);
+  if(searchQuery) list=list.filter(p=>
+    p.name.toLowerCase().includes(searchQuery)||
+    p.category.toLowerCase().includes(searchQuery)||
+    p.tags.some(t=>t.includes(searchQuery))||
+    p.info.toLowerCase().includes(searchQuery)
+  );
+  return list;
+}
+
+// ── BUILD QTY CONTROL ──
+function buildQtyCtrl(id,qty){
+  if(qty===0){
+    return `<button class="plus-only-btn" data-id="${id}" data-action="add">+</button>`;
+  }
+  return `<div class="qty-pill">
+    <button class="qty-minus" data-id="${id}" data-action="minus">−</button>
+    <span class="qty-num">${qty}</span>
+    <button class="qty-plus" data-id="${id}" data-action="add">+</button>
+  </div>`;
+}
+
+// ── RENDER PRODUCTS ──
+function renderProducts(){
+  const grid=document.getElementById('productsGrid');
+  const noRes=document.getElementById('noResults');
+  const smWrap=document.getElementById('showMoreWrap');
+  const filtered=getFiltered();
+
+  if(!filtered.length){
+    grid.innerHTML=''; noRes.style.display='block';
+    document.getElementById('noResultsTerm').textContent=searchQuery||activeCategory;
+    smWrap.style.display='none'; return;
+  }
+  noRes.style.display='none';
+
+  const mobile=isMobile();
+  const maxVisible=mobile?visibleRows*COLS_MOBILE:filtered.length;
+  const shown=filtered.slice(0,maxVisible);
+  const hasMore=mobile&&maxVisible<filtered.length;
+
+  grid.innerHTML='';
+  shown.forEach((p,i)=>{
+    const qty=cart[p.id]||0;
+    const card=document.createElement('div');
+    card.className='product-card reveal';
+    card.setAttribute('data-pid',p.id);
+    card.style.transitionDelay=(i%(mobile?2:4)*0.07)+'s';
+    card.innerHTML=`
+      <div class="product-img-wrap">
+        <span class="emoji-main">${p.emoji}</span>
+        <div class="hover-overlay">
+          <div class="overlay-title">Flavour Profile</div>
+          <div class="overlay-fact">${p.info}</div>
+          <div class="overlay-tags">${p.tags.map(t=>`<span class="otag">${tagLabel[t]}</span>`).join('')}</div>
+        </div>
+      </div>
+      <div class="product-body">
+        <div class="product-name">${p.name}</div>
+        <div class="product-weight">${p.weight}</div>
+        <div class="product-tags">${p.tags.map(t=>`<span class="ptag ${tagMap[t]}">${tagLabel[t]}</span>`).join('')}</div>
+        <div class="product-footer">
+          <div class="product-price">₹${p.price}<span> / pack</span></div>
+          <div class="qty-wrap" id="qty-${p.id}">${buildQtyCtrl(p.id,qty)}</div>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+  });
+
+  // Attach qty listeners
+  attachQtyListeners();
+
+  // Show more button
+  if(mobile&&hasMore){
+    const rem=filtered.length-maxVisible;
+    smWrap.style.display='block';
+    document.getElementById('showMoreBtn').innerHTML=`Show More Snacks <span style="font-size:0.72rem;opacity:0.7">(${rem} more)</span> ↓`;
+  } else {
+    smWrap.style.display='none';
+  }
+
+  setTimeout(()=>{revealOnScroll();if(window._reobserve)window._reobserve();},80);
+}
+
+function attachQtyListeners(){
+  document.querySelectorAll('[data-action]').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      handleQty(parseInt(btn.dataset.id),btn.dataset.action,btn);
+    });
+  });
+}
+
+// ── QTY HANDLER ──
+function handleQty(id,action,btn){
+  const product=products.find(p=>p.id===id);
+  const prev=cart[id]||0;
+
+  if(action==='add'){
+    cart[id]=(prev||0)+1;
+    if(prev===0){flyToCart(product,btn);showToast(`${product.emoji} Added!`);}
+    else showToast(`${product.emoji} ×${cart[id]} in cart`);
+  } else if(action==='minus'){
+    if(prev>0) cart[id]=prev-1;
+    if(cart[id]===0) delete cart[id];
+  }
+
+  // Update qty control in card
+  const qWrap=document.getElementById(`qty-${id}`);
+  if(qWrap){
+    const newQty=cart[id]||0;
+    qWrap.innerHTML=buildQtyCtrl(id,newQty);
+    // Animate
+    const num=qWrap.querySelector('.qty-num');
+    if(num){num.classList.remove('qty-pop');void num.offsetWidth;num.classList.add('qty-pop');}
+    // Re-attach listeners just for this wrap
+    qWrap.querySelectorAll('[data-action]').forEach(b=>{
+      b.addEventListener('click',e=>{e.stopPropagation();handleQty(parseInt(b.dataset.id),b.dataset.action,b);});
+    });
+  }
+
+  updateCartCount();
+}
+
+// ── FLY TO CART ──
+function flyToCart(product,btn){
+  const fly=document.createElement('div');
+  fly.className='flying-item';
+  fly.textContent=product.emoji;
+  document.body.appendChild(fly);
+  const bR=btn.getBoundingClientRect();
+  const cR=document.getElementById('cartBtn').getBoundingClientRect();
+  const sX=bR.left+bR.width/2,sY=bR.top+bR.height/2;
+  const eX=cR.left+cR.width/2,eY=cR.top+cR.height/2;
+  let t0=null;
+  (function anim(ts){
+    if(!t0) t0=ts;
+    const p=Math.min((ts-t0)/650,1);
+    const e=p<0.5?2*p*p:-1+(4-2*p)*p;
+    const x=sX+(eX-sX)*e;
+    const cy=Math.min(sY,eY)-80;
+    const y=(1-p)*(1-p)*sY+2*(1-p)*p*cy+p*p*eY;
+    fly.style.cssText=`position:fixed;font-size:1.6rem;pointer-events:none;z-index:9999;left:${x}px;top:${y}px;opacity:${p<0.8?1:1-(p-0.8)*5};transform:translate(-50%,-50%) scale(${1-p*0.6})`;
+    if(p<1) requestAnimationFrame(anim); else fly.remove();
+  })(performance.now());
+}
+
+function updateCartCount(){
+  const total=Object.values(cart).reduce((s,v)=>s+v,0);
+  const cc=document.getElementById('cartCount');
+  cc.textContent=total;
+  cc.style.transform='scale(1.6)';
+  setTimeout(()=>cc.style.transform='scale(1)',280);
+}
+
+// ── SHOW MORE ──
+document.getElementById('showMoreBtn').addEventListener('click',()=>{
+  visibleRows+=ROWS_PER_PAGE;
+  renderProducts();
+});
+
+// ── CART SIDEBAR ──
+function buildCartUI(){
+  const data=Object.entries(cart).map(([id,qty])=>({...products.find(p=>p.id===parseInt(id)),qty}));
+  const total=data.reduce((s,c)=>s+c.price*c.qty,0);
+  const itemsEl=document.getElementById('cartItems');
+  const footerEl=document.getElementById('cartFooter');
+  if(!data.length){
+    itemsEl.innerHTML=`<div class="empty-cart"><span class="ec-emoji">🛒</span><p>Your cart is empty.<br>Add some crunch!</p></div>`;
+    footerEl.style.display='none'; return;
+  }
+  footerEl.style.display='block';
+  document.getElementById('cartTotal').textContent='₹'+total;
+  itemsEl.innerHTML=data.map(c=>`
+    <div class="cart-item">
+      <span class="ci-emoji">${c.emoji}</span>
+      <div class="ci-info"><div class="ci-name">${c.name}</div><div class="ci-sub">${c.weight} × ${c.qty}</div></div>
+      <div class="ci-price">₹${c.price*c.qty}</div>
+      <button class="ci-remove" data-id="${c.id}">✕</button>
+    </div>`).join('');
+  itemsEl.querySelectorAll('.ci-remove').forEach(b=>{
+    b.addEventListener('click',()=>{
+      delete cart[parseInt(b.dataset.id)];
+      buildCartUI(); updateCartCount();
+      // refresh qty controls visible on screen
+      document.querySelectorAll('[data-pid]').forEach(card=>{
+        const pid=parseInt(card.dataset.pid);
+        const qw=document.getElementById(`qty-${pid}`);
+        if(qw) qw.innerHTML=buildQtyCtrl(pid,cart[pid]||0);
+      });
+      attachQtyListeners();
+    });
+  });
+}
+
+document.getElementById('cartBtn').addEventListener('click',()=>toggleCart(true));
+document.getElementById('cartOverlay').addEventListener('click',()=>toggleCart(false));
+document.getElementById('closeCart').addEventListener('click',()=>toggleCart(false));
+function toggleCart(open){
+  document.getElementById('cartOverlay').classList.toggle('open',open);
+  document.getElementById('cartSidebar').classList.toggle('open',open);
+  if(open) buildCartUI();
+}
+
+document.getElementById('checkoutBtn').addEventListener('click',()=>{
+  const data=Object.entries(cart).map(([id,qty])=>({...products.find(p=>p.id===parseInt(id)),qty}));
+  const total=data.reduce((s,c)=>s+c.price*c.qty,0);
+  const msg=encodeURIComponent("Hello! I'd like to order from Shree Krishna Hot & Fresh Chips:\n\n"+data.map(c=>`• ${c.name} (${c.weight}) × ${c.qty} = ₹${c.price*c.qty}`).join('\n')+`\n\nTotal: ₹${total}`);
+  window.open(`https://wa.me/916386623780?text=${msg}`,'_blank');
+});
+
+// ── REVIEWS ──
+const reviews=[
+  {stars:5,text:"The khakhras are absolutely addictive! Especially the Methi Masala one — my entire family finishes a pack in one sitting. Best in Mumbai hands down.",name:"Priya Shah",loc:"Ghatkopar, Mumbai",emoji:"👩"},
+  {stars:5,text:"Ordered the bhakri assortment and the nachni bhakri is something else. So wholesome and fresh. Arrived well-packed. Will order every month!",name:"Rahul Desai",loc:"Pune",emoji:"👨"},
+  {stars:5,text:"The banana chips beat anything I've had from Kerala. The spicy red masala ones are next level. Fresh, crunchy, no artificial taste at all!",name:"Meera Nair",loc:"Navi Mumbai",emoji:"👩"},
+  {stars:5,text:"Pani Puri Khakhra is a genius idea! Ordered for our Diwali party and it was an instant hit. Everyone kept asking where we got it from.",name:"Amit Kulkarni",loc:"Thane",emoji:"👨"},
+  {stars:4,text:"The Jain cheese jalapeño nachos are surprisingly bold for a Jain product. Great for our household. Quick WhatsApp ordering process too!",name:"Komal Jain",loc:"Borivali, Mumbai",emoji:"👩"},
+  {stars:5,text:"Pure, honest, no-preservative snacks. You can genuinely taste the difference from supermarket brands. The chakli is top notch!",name:"Suresh Mehta",loc:"Dadar, Mumbai",emoji:"👨"},
+];
+const rGrid=document.getElementById('reviewsGrid');
+reviews.forEach((r,i)=>{
+  const el=document.createElement('div');
+  el.className='review-card reveal';
+  el.style.transitionDelay=(i%3*0.1)+'s';
+  el.innerHTML=`<div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</div>
+    <p class="review-text">${r.text}</p>
+    <div class="reviewer"><div class="reviewer-avatar">${r.emoji}</div>
+    <div><div class="reviewer-name">${r.name}</div><div class="reviewer-loc">📍 ${r.loc}</div></div></div>`;
+  rGrid.appendChild(el);
+});
+
+// ── TOAST ──
+let toastTmr;
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent='🎉 '+msg; t.classList.add('show');
+  clearTimeout(toastTmr);
+  toastTmr=setTimeout(()=>t.classList.remove('show'),2000);
+}
+
+// ── SCROLL REVEAL ──
+function revealOnScroll(){
+  document.querySelectorAll('.reveal').forEach(el=>{
+    if(el.getBoundingClientRect().top<window.innerHeight-40) el.classList.add('visible');
+  });
+}
+
+// Use IntersectionObserver for reliable mobile reveal
+if('IntersectionObserver' in window){
+  const revealObserver=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}});
+  },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+  // Re-observe when new cards are rendered
+  const origReveal=revealOnScroll;
+  window._reobserve=function(){
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el=>revealObserver.observe(el));
+    origReveal();
+  };
+} else {
+  window._reobserve=revealOnScroll;
+}
+
+// Mobile: also trigger on touch scroll
+window.addEventListener('touchmove',revealOnScroll,{passive:true});
+window.addEventListener('touchend',revealOnScroll,{passive:true});
+
+// ── COUNTERS ──
+function initCounters(){
+  document.querySelectorAll('[data-count]').forEach(el=>{
+    const target=parseFloat(el.dataset.count);
+    const isFloat=target%1!==0;
+    let t0=null;
+    (function step(ts){
+      if(!t0) t0=ts;
+      const p=Math.min((ts-t0)/1900,1);
+      const ease=1-Math.pow(1-p,3);
+      el.textContent=isFloat?(target*ease).toFixed(1):Math.floor(target*ease)+(target>=1000?'+':'');
+      if(p<1) requestAnimationFrame(step);
+      else el.textContent=isFloat?target.toFixed(1):target+(target>=1000?'+':'');
+    })(performance.now());
+  });
+}
+
+// ── RESIZE ──
+let rzTimer;
+window.addEventListener('resize',()=>{clearTimeout(rzTimer);rzTimer=setTimeout(()=>{visibleRows=ROWS_PER_PAGE;renderProducts();},220);});
+
+// ── INIT ──
+renderProducts();
+revealOnScroll();
+if(window._reobserve)window._reobserve();
+</script>
+</body>
+</html>
